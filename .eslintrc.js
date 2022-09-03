@@ -1,18 +1,35 @@
 module.exports = {
-	env: {
-		browser: true,
-		es2021: true,
-	},
-	extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-	parser: "@typescript-eslint/parser",
-	parserOptions: {
-		ecmaVersion: "latest",
-		sourceType: "module",
-	},
-	plugins: ["@typescript-eslint"],
-	rules: {
-		"linebreak-style": ["error", "unix"],
-		quotes: ["error", "double"],
-		semi: ["error", "always"],
-	},
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      excludedFiles: '*.js',
+    },
+  ],
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    '@typescript-eslint',
+    'unused-imports',
+    'prettier',
+    'jest',
+    'react-hooks',
+    'react',
+  ],
+  extends: [
+    'prettier',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+    'plugin:react-hooks/recommended',
+  ],
+  rules: {
+    '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
+    'no-console': 'error',
+  },
+  ignorePatterns: ['**/*.js'],
 };
