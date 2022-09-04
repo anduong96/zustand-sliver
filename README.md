@@ -4,6 +4,12 @@ This package was build to provide zustand with redux-toolkit like api with some 
 
 ## Usage
 
+### Install
+
+```bash
+npm i --save zustand-sliver
+```
+
 ### Create a sliver
 
 ```typescript
