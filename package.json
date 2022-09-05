@@ -1,6 +1,6 @@
 {
 	"name": "zustand-sliver",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Zustand slices like redux-toolkit",
 	"main": "dist/index.js",
 	"files": ["dist"],

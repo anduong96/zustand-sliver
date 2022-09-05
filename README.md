@@ -1,3 +1,9 @@
+# Use [Tiamut](https://github.com/anduong96/Tiamut) instead
+
+<br />
+<br />
+<br />
+
 # Zustand Sliver
 
 This package was build to provide zustand with redux-toolkit like api with some opinionated utilities
